@@ -1,0 +1,25 @@
+<hr>
+<div class="card w-100">
+	<div>
+		<div class="card-body">
+			<div class="row">
+				<div class="col-6">
+					<h5 class="card-title">{{ recipe.name}} </h5>
+					<p class="card-text small">{{ recipe.description }}</p>
+				</div>
+				<div class="col-6 nopadding"><img [src]="recipe.imagePath" alt=" {{ recipe.name }}" class="img-fluid w-100 rounded"></div>
+			</div>
+			<!-- row -->
+		</div>
+		<!-- card body -->
+		<div class="card-footer">
+			  <a href="#" class="btn btn-primary btn-sm" (click)="onSelected()">View</a> &nbsp;
+				<a href="#" class="btn btn-secondary btn-sm">Edit</a>
+		</div>
+		<!-- footer -->
+	</div>
+	<!-- ngFor recipes -->
+</div>
+
+
+<!-- card -->
